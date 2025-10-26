@@ -85,8 +85,7 @@ It allows users to filter data by vendor, category, or time period to explore sp
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/yourusername/vendor-performance-analysis.git
-   cd vendor-performance-analysis
+   git clone https://github.com/samkeetttt/Vendor_Data_Performance_Analysis
    
 2. Run the Python notebook
    Open data_analysis.ipynb
