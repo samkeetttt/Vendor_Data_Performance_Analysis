@@ -9,11 +9,9 @@ logging.basicConfig(
 )
 
 def ingest_db(df, table_name, engine):
-    '''this function will ingest the dataframe into database table'''
     df.to_sql(table_name, con = engine, if_exists = 'replace', index = False)
     
 def create_vendor_summary(conn):
-    '''this function will merge the different tables to get the overall vendor summary and adding new columns in the resultant data'''
     vendor_sales_summary = pd.read_sql_query("""WITH FreightSummary AS (
         SELECT 
             VendorNumber, 
